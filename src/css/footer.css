@@ -1,0 +1,15 @@
+.footer{
+    background-color: #121B22;
+    color: white;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+@media only screen and (max-width: 480px){
+    .footer{
+        padding: 0 3rem;
+    }
+}

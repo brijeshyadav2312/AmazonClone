@@ -1,0 +1,143 @@
+.sliderElement img{
+    width: 100%;
+    -webkit-mask-image: linear-gradient(180deg,#000,transparent);
+}
+.mainHeader{
+    position: relative;
+}
+
+.sliderElement{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    position: absolute;
+    top: 0;
+}
+
+.sliderElement::-webkit-scrollbar{
+    display: none;
+}
+.navigationButton{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+.navigationButton span{
+    padding: 3rem 0;
+    cursor: pointer;
+}
+
+.contentSection{
+    width: 100%;
+    padding-top: 220px;
+    z-index: -1;
+}
+.crd{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 50px 50px 50px 50px;
+}
+.card{
+    background-color: #FFFFFF !important;
+    position: relative;
+    width: 330px;
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 6px;
+}
+.card p:nth-child(2){
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.card p:nth-child(5){
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+.productImage{
+    max-height: 200px;
+    min-height: 200px!important;
+    object-fit: contain;
+    padding: 0.5rem 0;
+}
+.rating{
+    color: rgb(255, 196, 0);
+    font-size: 1.4rem;
+    padding: 0.1rem 0;
+}
+.rating span{
+    cursor: pointer;
+}
+.addToCart{
+    background: linear-gradient(180deg,#f7dfa5,#f0c14b);
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.removefromCart{
+    background: linear-gradient(180deg,#ff9e9e,#ff7c30);
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.banner img{
+    width: 94%;
+    margin: 0 auto;
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    background-color: #000000be;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    color: #f0c14b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loadingnone{
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+    .sliderElement{
+        align-items: center;
+        justify-content: center;
+    }
+    .sliderElement img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    .contentSection{
+        padding-top: 100px;
+    }
+    .crd{
+        padding: 30px;
+        justify-content: center;
+    }
+}
